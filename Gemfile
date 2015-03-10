@@ -11,6 +11,8 @@ gem 'pg'
 
 gem 'active_model_serializers'
 
+gem 'edmunds_ruby'
+
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
 end
