@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
+  resources :years, only: [:index]
+  resources :makes, only: [:index]
+  resources :models, only: [:index]
   resources :cars, except: [:new, :edit]
-  resources :manufacturers, except: [:new, :edit]
-
 
 
 
