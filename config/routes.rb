@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :cars, except: [:new, :edit]
   resources :manufacturers, except: [:new, :edit]
 
 
