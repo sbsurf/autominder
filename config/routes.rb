@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users
+
   resources :years, only: [:index]
   resources :makes, only: [:index]
   resources :models, only: [:index]

@@ -1,17 +1,14 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.2.0'
-
 gem 'rails-api'
+gem 'active_model_serializers'
+gem 'pg'
+gem 'devise', '~> 3.4'
+gem 'omniauth', '~> 1.2'
+gem 'edmunds_ruby'
 
 gem 'spring', :group => :development
-
-
-gem 'pg'
-
-gem 'active_model_serializers'
-
-gem 'edmunds_ruby'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
