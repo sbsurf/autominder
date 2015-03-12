@@ -8,6 +8,7 @@ RSpec.describe MakesController, type: :controller do
     let(:makes_all) { [{id: 200002038, models: []}, {id: 200464140, models: []}, {id: 200000001, models: []}] }
 
     before do
+      sign_in
       allow(Edmunds::Make).to receive(:new).and_return(edmunds)
     end
 

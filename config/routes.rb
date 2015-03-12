@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  devise_for :users
+  get 'sessions/create'
+
+  devise_for :users, controllers: { sessions: 'sessions' }
 
   resources :years, only: [:index]
   resources :makes, only: [:index]

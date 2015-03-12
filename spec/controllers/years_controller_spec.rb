@@ -3,6 +3,7 @@ require 'rails_helper'
 RSpec.describe YearsController, type: :controller do
   describe 'GET #index' do
     before do
+      sign_in
       edmunds = instance_double('Edmunds::ModelYear')
       allow(Edmunds::ModelYear).to receive(:new).and_return(edmunds)
       expect(edmunds).to receive(:find_distinct_year_with_new_or_used).and_return(%w[2016 2015 2014])
