@@ -26,5 +26,10 @@ module Autominder
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    # Generate factory girl factories instead of fixtures by default.rails g factory_girl:model Car name speed:integer
+    config.generators do |g|
+      g.fixture_replacement :factory_girl
+    end
   end
 end
